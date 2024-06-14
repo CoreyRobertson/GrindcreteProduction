@@ -1,36 +1,46 @@
-import Head from 'next/head'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
-
 import Why from '@/components/Why'
 import Gallery from '@/components/Gallery'
 
-
-
+export const metadata = {
+  title: 'Grindcrete',
+  description: 'Grindcrete offers top-notch concrete grinding, polishing, and sealing services around Melbourne. Transform your space with our expert concrete finishing solutions. Discover our services today.',
+  viewport: 'width=device-width, initial-scale=1',
+  icons: {
+    icon: '/images/favicon.ico',
+  },
+  keywords: 'concrete grinding, concrete polishing, concrete services, floor finishing, concrete sealing, home improvement',
+  openGraph: {
+    title: 'Grindcrete',
+    description: 'Grindcrete offers top-notch concrete grinding, polishing, and sealing services around Melbourne. Transform your space with our expert concrete finishing solutions. Discover our services today.',
+    url: 'https://www.grindcrete.com.au',
+    type: 'website',
+    images: [
+      {
+        url: 'https://www.grindcrete.com.au/images/og-image.jpg',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Grindcrete',
+    description: 'Grindcrete offers top-notch concrete grinding, polishing, and sealing services around Melbourne. Transform your space with our expert concrete finishing solutions. Discover our services today.',
+    images: [
+      {
+        url: 'https://www.grindcrete.com.au/images/og-image.jpg',
+      },
+    ],
+  },
+};
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Grindcrete</title>
-        <meta name="description" content="Grindcrete offers top-notch concrete grinding, polishing, and sealing services around Melbourne. Transform your space with our expert concrete finishing solutions. Discover our services today." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="keywords" content="concrete grinding, concrete polishing, concrete services, floor finishing, concrete sealing, home improvement" />
-        <link rel="icon" href="/images/favicon.ico" />
-      </Head>
-      <main>
-        <Hero />
-        <Services />
-        <Gallery />
-
-        <Why />
-      </main>
-    </>
+    <main>
+      <Hero />
+      <Services />
+      <Gallery />
+      <Why />
+    </main>
   )
 }
-
-
-
-
-

@@ -1,23 +1,44 @@
+import React from 'react';
+import { BsArrowDownRight } from 'react-icons/bs';
+import Link from 'next/link';
 
-import Head from 'next/head'
-import Link from 'next/link'
-import React from 'react'
-import { BsArrowDownRight } from 'react-icons/bs'
+export const metadata = {
+    title: 'Frequently Asked Questions - Grind Crete',
+    description: 'Find answers to common questions about concrete grinding, sealing, and polishing services. Learn how Grind Crete can enhance your property with durable, stylish concrete finishes.',
+    viewport: 'width=device-width, initial-scale=1.0',
+    icons: {
+        icon: '/images/favicon.ico',
+    },
+    alternates: {
+        canonical: 'https://www.grindcrete.com.au/FAQ',
+    },
+    keywords: 'concrete grinding, concrete sealing, concrete polishing, polished concrete floors, concrete finishes, concrete maintenance',
+    openGraph: {
+        title: 'Frequently Asked Questions - Grind Crete',
+        description: 'Find answers to common questions about concrete grinding, sealing, and polishing services. Learn how Grind Crete can enhance your property with durable, stylish concrete finishes.',
+        url: 'https://www.grindcrete.com.au/FAQ',
+        type: 'website',
+        images: [
+            {
+                url: 'https://www.grindcrete.com.au/images/og-image.jpg',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Frequently Asked Questions - Grind Crete',
+        description: 'Find answers to common questions about concrete grinding, sealing, and polishing services. Learn how Grind Crete can enhance your property with durable, stylish concrete finishes.',
+        images: [
+            {
+                url: 'https://www.grindcrete.com.au/images/og-image.jpg',
+            },
+        ],
+    },
+};
 
-const index = () => {
-
-
-
+const FAQPage = () => {
     return (
-        <page>
-            <Head>
-                <title>Frequently Asked Questions - Grind Crete</title>
-                <meta name="description" content="Find answers to common questions about concrete grinding, sealing, and polishing services. Learn how Grind Crete can enhance your property with durable, stylish concrete finishes." />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <meta name="keywords" content="concrete grinding, concrete sealing, concrete polishing, polished concrete floors, concrete finishes, concrete maintenance" />
-                <link rel="icon" href="/images/favicon.ico" />
-                <link rel="canonical" href="https://www.grindcrete.com.au/FAQ" />
-            </Head>
+        <main>
             <section className='FAQ_section'>
                 <div className='why_content-container'>
                     <h3 className='inter-bold'><BsArrowDownRight />FAQ</h3>
@@ -52,18 +73,15 @@ const index = () => {
                     <h4 className='inter-light'>How do I maintain my polished and sealed concrete floor?</h4>
                     <p className='roboto-light why_para'>
                         Maintaining a polished and sealed concrete floor is straightforward. Regular dust mopping and occasional wet mopping with a pH-neutral cleaner are usually sufficient to keep the floor looking its best. Avoid using harsh chemicals or abrasive tools that could damage the sealant or polish. With proper care, your concrete floor will maintain its beauty and durability for years to come.
-
                     </p>
                     <div className="buttons-container">
                         <a href='#contact'>CONTACT</a>
                         <Link href="/Quote">REQUEST QUOTE</Link>
                     </div>
                 </div>
-
             </section>
-
-        </page>
+        </main>
     )
 }
 
-export default index
+export default FAQPage;

@@ -1,21 +1,44 @@
 import React from 'react'
-
 import { BsArrowDownRight } from 'react-icons/bs'
-import Head from 'next/head'
-import Gallery from '../../components/Gallery'
+import Gallery from '@/components/Gallery'
 
+export const metadata = {
+    title: 'About us - Grind Crete',
+    description: 'Grind Crete is a Melbourne-based concrete grinding company dedicated to breathing new life into your concrete surfaces. Concrete grinding and finishing across Melbourne.',
+    viewport: 'width=device-width, initial-scale=1.0',
+    icons: {
+        icon: '/images/favicon.ico',
+    },
+    alternates: {
+        canonical: 'https://www.grindcrete.com.au/About',
+    },
+    keywords: 'concrete grinding, concrete polishing, concrete services, Melbourne, concrete finishing',
+    openGraph: {
+        title: 'About us - Grind Crete',
+        description: 'Grind Crete is a Melbourne-based concrete grinding company dedicated to breathing new life into your concrete surfaces. Concrete grinding and finishing across Melbourne.',
+        url: 'https://www.grindcrete.com.au/About',
+        type: 'website',
+        images: [
+            {
+                url: 'https://www.grindcrete.com.au/images/og-image.jpg',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'About us - Grind Crete',
+        description: 'Grind Crete is a Melbourne-based concrete grinding company dedicated to breathing new life into your concrete surfaces. Concrete grinding and finishing across Melbourne.',
+        images: [
+            {
+                url: 'https://www.grindcrete.com.au/images/og-image.jpg',
+            },
+        ],
+    },
+};
 
-const index = () => {
+const AboutPage = () => {
     return (
-        <page>
-            <Head>
-                <title>About us - Grind Crete</title>
-                <meta name="description" content="Grind Crete is a Melbourne-based concrete grinding company dedicated to breathing new life into your concrete surfaces. Concrete grinding and finishing across Melbourne." />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="icon" href="/images/favicon.ico" />
-                <link rel="canonical" href="https://www.grindcrete.com.au/About" />
-            </Head>
-
+        <main>
             <section className='about_section'>
                 <div className='why_content-container'>
                     <h3 className='inter-bold'><BsArrowDownRight />ABOUT US</h3>
@@ -37,8 +60,8 @@ const index = () => {
                 </div>
             </section>
             <Gallery />
-        </page>
-    )
+        </main>
+    );
 }
 
-export default index
+export default AboutPage;
