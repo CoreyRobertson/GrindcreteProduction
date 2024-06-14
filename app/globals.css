@@ -1208,4 +1208,8 @@ footer hr {
     /* Adjust the gap between the images as needed */
   }
 
+  .pp_content {
+    width: 90%;
+  }
+
 }
