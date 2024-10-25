@@ -51,9 +51,9 @@ const Hero = () => {
         // Function to dynamically change the image source based on the screen width
         const updateImageSrc = () => {
             if (window.innerWidth <= 768) { // Mobile devices width
-                setImageSrc('/images/HeroImage2.png');
+                setImageSrc('/images/HeroImage3.png');
             } else {
-                setImageSrc('/images/HeroImage.png');
+                setImageSrc('/images/HeroImage4.png');
             }
         };
 
@@ -69,7 +69,7 @@ const Hero = () => {
         <section className='hero_section'>
             <div className='hero_text-container'>
                 <div className='hero_text-top'>
-                    <h2 className='inter-light'>EXISTING SLABS +</h2>
+                    <h2 className='inter-light'>POLISHED CONCRETE +</h2>
                 </div>
                 <div className='hero_text-bottom'>
                     <p className='roboto-light'>
@@ -79,12 +79,12 @@ const Hero = () => {
                         BOOK NOW
                     </Link>
                     <h2 className='inter-bold'>
-                        NEW BUILDS
+                        GRIND & SEAL
                     </h2>
                 </div>
             </div>
             <div className='hero_image-container'>
-                <Image src={imageSrc} priority alt='Hero Image' quality={65} layout='fill' />
+                <Image src={imageSrc} priority alt='Hero Image' quality={100} layout='fill' />
             </div>
             <div className='logo2'>
                 <Image src='/images/Logo2.svg' alt='Grindcrete Logo' layout='fill' quality={100} />

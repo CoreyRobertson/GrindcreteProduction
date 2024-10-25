@@ -4,16 +4,16 @@ import Why from '@/components/Why'
 import Gallery from '@/components/Gallery'
 
 export const metadata = {
-  title: 'Grindcrete',
-  description: 'Grindcrete offers top-notch concrete grinding, polishing, and sealing services around Melbourne. Transform your space with our expert concrete finishing solutions. Discover our services today.',
+  title: 'Grind Crete',
+  description: 'Grind Crete offers top-notch concrete grinding, polishing, and sealing services around Melbourne. Transform your space with our expert concrete finishing solutions. Discover our services today.',
   viewport: 'width=device-width, initial-scale=1',
   icons: {
     icon: '/images/favicon.ico',
   },
   keywords: 'concrete grinding, concrete polishing, concrete services, floor finishing, concrete sealing, home improvement',
   openGraph: {
-    title: 'Grindcrete',
-    description: 'Grindcrete offers top-notch concrete grinding, polishing, and sealing services around Melbourne. Transform your space with our expert concrete finishing solutions. Discover our services today.',
+    title: 'Grind Crete',
+    description: 'Grind Crete offers top-notch concrete grinding, polishing, and sealing services around Melbourne. Transform your space with our expert concrete finishing solutions. Discover our services today.',
     url: 'https://www.grindcrete.com.au',
     type: 'website',
     images: [
@@ -24,8 +24,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Grindcrete',
-    description: 'Grindcrete offers top-notch concrete grinding, polishing, and sealing services around Melbourne. Transform your space with our expert concrete finishing solutions. Discover our services today.',
+    title: 'Grind Crete',
+    description: 'Grind Crete offers top-notch concrete grinding, polishing, and sealing services around Melbourne. Transform your space with our expert concrete finishing solutions. Discover our services today.',
     images: [
       {
         url: 'https://www.grindcrete.com.au/images/og-image.jpg',

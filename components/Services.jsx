@@ -29,10 +29,17 @@ const serviceCards = [
     }
     , {
         id: 5,
-        heading: "ACID ETCH",
-        text: "Acid etching is a preparatory process that uses a chemical solution to create a roughened texture on the concrete surface, improving the adhesion of subsequent coatings or sealants.  ",
-        text2: ' This method is essential for achieving optimal results in both new and existing concrete installations, ensuring that finishes adhere properly and last longer.Acid etching is particularly beneficial for preparing floors for epoxy coatings or decorative stains, resulting in enhanced visual appeal and increased lifespan of your concrete surfaces.',
+        heading: "PAVILION FINISH",
+        text: "Pavilion finishing is a preparatory process that uses a chemical solution to create a roughened texture on the concrete surface, improving the adhesion of subsequent coatings or sealants.",
+        text2: "This method not only adds aesthetic appeal but also ensures safety with a non-slip surface. Pavilion finishes are low maintenance and ideal for spaces where both durability and safety are essential, making them perfect for residential and commercial outdoor areas."
+    },
+    {
+        id: 6,
+        heading: "TILE & GLUE REMOVAL",
+        text: "Our tile and glue removal service efficiently eliminates old tiles and adhesives, preparing your surface for a fresh start. Whether you're renovating or updating a space, this process ensures the concrete is left clean and smooth, ready for your next project.",
+        text2: "Using specialized equipment, we safely and effectively remove stubborn tile glue, leaving no residue behind. This service provides a seamless, ready-to-use surface for any new flooring installation."
     }
+
 ]
 
 const Services = () => {

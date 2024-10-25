@@ -2,8 +2,6 @@
 
 import Image from 'next/image'
 import React, { useState } from 'react'
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
 
 const Form = () => {
 
@@ -22,38 +20,30 @@ const Form = () => {
                 <p style={{ fontSize: '18px', color: '#3C71B8' }} className='roboto-bold'>Reach out to us now for an estimate on your home or business flooring needs!</p>
                 <p className='roboto-light'>Based in Melbourne, Grind Crete are able to serve not only the entire CBD and the broader Melbourne metropolitan region but also extend our services to the Mornington Peninsula.</p>
                 <div className='form_container'>
-                    <form id="quote-form" class="quote-form" action="https://formsubmit.co/info@grindcrete.com.au" method="POST">
-                        <div className='quote_form-fields'>
-                            <div class="input-group">
+                    <form id="quote-form" className="quote-form" action="https://formsubmit.co/info@grindcrete.com.au" method="POST">
+                        <div className="quote_form-fields">
+                            <div className="input-group">
                                 <input type="text" id="name" name="name" placeholder="Name" required />
-                                <input type="email" id="email" name="email" placeholder="email" required />
+                                <input type="email" id="email" name="email" placeholder="Email" required />
                             </div>
-                            <div class="input-group">
+                            <div className="input-group">
                                 <input type="tel" id="phone" name="phone" placeholder="Phone" required />
                                 <input type="number" id="square-metres" name="square_metres" placeholder="Square Meters" required />
                             </div>
-                            <div class="input-group">
-                                <select aria-label='desired service' id="desired-service" name="desired_service" required>
+                            <div className="input-group">
+                                <select aria-label="desired service" id="desired-service" name="desired_service" required>
                                     <option value="">Desired Service</option>
                                     <option value="service1">Grind/Seal/Polish</option>
                                     <option value="service2">Epoxy</option>
-                                    <option value="service2">Acid Etch</option>
+                                    <option value="service3">Pavilion Finish</option>
                                 </select>
-                                <DatePicker
-                                    aria-label='date selection'
-                                    className='datepicker'
-                                    name='requested date'
-                                    selected={startDate}
-                                    onChange={(date) => setStartDate(date)}
-                                    dateFormat="dd/MM/yyyy"
-
-                                />
                             </div>
                         </div>
-                        <div class="submit-container">
-                            <button aria-label='form submit button' className='form_button' type="submit">SUBMIT</button>
+                        <div className="submit-container">
+                            <button aria-label="form submit button" className="form_button" type="submit">SUBMIT</button>
                         </div>
                     </form>
+
                 </div>
             </div>
         </section>
